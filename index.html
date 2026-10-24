@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pablo Bazar Autos</title>
+<link rel="stylesheet" href="styles.css">
+<!-- Incorporando SweetAlert2 para mejores alertas (UX) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+
+<header>
+    <h1>Pablo Bazar Autos</h1>
+    <p>Los mejores vehículos al mejor precio</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#vehiculos">Vehículos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="inicio">
+    <div class="login">
+        <h2>Iniciar Sesión</h2>
+        <!-- Uso de <form> para validación nativa de HTML5 (correo requerido) -->
+        <form id="formLogin">
+            <input type="email" id="correo" placeholder="Ingrese su correo electrónico" required>
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+</section>
+
+<section id="vehiculos">
+    <h2 style="text-align:center;">Catálogo de Vehículos</h2>
+    <div class="catalogo">
+        <!-- Imágenes unificadas usando Unsplash para mantener consistencia -->
+        <div class="auto">
+            <img src="450_1000.jpg">
+            <div class="info">
+                <h3>Toyota Corolla 2023</h3>
+                <p>Automático • 20,000 km</p>
+                <p class="precio">$380,000 MXN</p>
+                <button onclick="comprarAuto('Toyota Corolla 2023',380000)">Comprar vehículo</button>
+            </div>
+        </div>
+        
+        <div class="auto">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chevrolet_Camaro_SS_2012_(11523364453).jpg" alt="Chevrolet Camaro">
+            <div class="info">
+                <h3>Chevrolet Camaro</h3>
+                <p>Motor V8 • Deportivo</p>
+                <p class="precio">$850,000 MXN</p>
+                <button onclick="comprarAuto('Chevrolet Camaro',850000)">Comprar vehículo</button>
+            </div>
+        </div>
+
+        <div class="auto">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2024_Ford_Mustang_GT_5.0_v8.jpg" alt="Ford Mustang">
+            <div class="info">
+                <h3>Ford Mustang GT</h3>
+                <p>Motor 5.0L • Deportivo</p>
+                <p class="precio">$920,000 MXN</p>
+                <button onclick="comprarAuto('Ford Mustang GT',920000)">Comprar vehículo</button>
+            </div>
+        </div>
+
+        <div class="auto">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_3_Series_(G20).jpg" alt="BMW Serie 3">
+            <div class="info">
+                <h3>BMW Serie 3</h3>
+                <p>Turbo • Lujo</p>
+                <p class="precio">$750,000 MXN</p>
+                <button onclick="comprarAuto('BMW Serie 3',750000)">Comprar vehículo</button>
+            </div>
+        </div>
+
+        <div class="auto">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Honda_Civic_(1Y7A1724).jpg" alt="Honda Civic">
+            <div class="info">
+                <h3>Honda Civic 2024</h3>
+                <p>Automático • Nuevo</p>
+                <p class="precio">$450,000 MXN</p>
+                <button onclick="comprarAuto('Honda Civic 2024',450000)">Comprar vehículo</button>
+            </div>
+        </div>
+
+        <div class="auto">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz_C200_4MATIC_AVANTGARDE_(W206)_rear.jpg" alt="Mercedes Benz C200">
+            <div class="info">
+                <h3>Mercedes Benz C200</h3>
+                <p>Premium • Lujo</p>
+                <p class="precio">$980,000 MXN</p>
+                <button onclick="comprarAuto('Mercedes Benz C200',980000)">Comprar vehículo</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacto">
+    <div class="contacto">
+        <h2>Contacto</h2>
+        <p><strong>Correo:</strong> Gutierrezpablo1403@gmail.com</p>
+        <p><strong>Celular:</strong> 7779878116</p>
+        <p>Gracias por visitar Pablo Bazar Autos. Contáctanos para más información sobre cualquier vehículo.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Pablo Bazar Autos - Todos los derechos reservados.</p>
+</footer>
+
+<!-- Scripts: SweetAlert2 y la lógica de la aplicación -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="app.js"></script>
+</body>
+</html>
